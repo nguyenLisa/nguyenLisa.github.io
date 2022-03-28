@@ -1,0 +1,42 @@
+title: Lisa Nguyen Quang Do
+author: nguyenLisa
+email: nqd.lisa@gmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-target-blank
+remote_theme: samarsault/plainwhite-jekyll
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: Lisa Nguyen Quang Do
+  tagline: Software engineer
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  social_links:
+    twitter: lisa_nqd
+    github:  nguyenLisa
+    linkedIn: in/nguyenqdlisa
+    email: nqd.lisa@gmail.com
+  description: I am a senior software engineer at Google Zurich. I received my Ph.D. in 2019 from Paderborn University, and my M.Sc. in Computer Science in 2014 from EPFL. <br /> My research interests are scalable static code analysis, usable tooling, and secure software engineering. In particular, I explored the usability of static analysis tools, from the optimization of the analysis algorithms to the implementation of their frameworks to the usability of their interfaces. 
+
+# No dates in the file names.
+permalink: /:title.html

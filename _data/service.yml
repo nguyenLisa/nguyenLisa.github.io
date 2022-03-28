@@ -1,0 +1,52 @@
+- name: "Organizer / chair"
+  display_date: 2017 - 2021
+  categories: ["SOAP", "ISSTA", "ECOOP"]
+  contents: |
+    - [SOAP 2021](https://pldi21.sigplan.org/home/SOAP-2021), PC chair
+    - [ISSTA & ECOOP 2021](https://conf.researchr.org/committee/ecoop-issta-2021/ecoop-issta-2021-organizing-committee), publicity chair
+    - [ECOOP 2020](https://2020.ecoop.org/track/ecoop-2020-artifacts), artifact evaluation co-chair
+    - [ECOOP 2019](https://2019.ecoop.org/track/ecoop-2019-Posters), posters chair
+    - [ISSTA & ECOOP 2018](https://2018.ecoop.org/track/ecoop-issta-2018-posters), posters chair
+    - [ECOOP 2017](https://2017.ecoop.org/track/ecoop-2017-Doctoral-Symposium), doctoral symposium co-chair
+- name: "PC member"
+  display_date: 2016 - 2022
+  categories: ["ICSE", "ISSTA", "ECOOP", "ASE", "OOPSLA", "ESEC/FSE"]
+  contents: |
+    - [ISSTA 2022](https://conf.researchr.org/track/issta-2022/issta-2022-doctoral-symposium), doctoral symposium
+    - [ICSE 2022](https://conf.researchr.org/track/icse-2022/icse-2022-posters), posters track
+    - [ISSTA & ECOOP 2021](https://conf.researchr.org/track/ecoop-issta-2021/ecoop-issta-2021-doctoral-symposium), doctoral symposium
+    - [ISSTA 2021](https://conf.researchr.org/track/issta-2021/issta-2021-technical-papers), research track
+    - [ASE 2020](https://conf.researchr.org/track/ase-2020/ase-2020-papers), research track
+    - [ASE 2019](https://2019.ase-conferences.org/track/ase-2019-Demonstrations), demonstrations track
+    - [ISSTA 2019](https://conf.researchr.org/track/issta-2019/issta-2019-Artifact-Evaluation-), artifact evaluation
+    - [ECOOP 2019](https://2019.ecoop.org/track/ecoop-2019-artifacts), artifact evaluation
+    - [ECOOP 2019](https://2019.ecoop.org/track/ecoop-2019-docsymp), doctoral symposium
+    - [OOPSLA 2018](https://2018.splashcon.org/track/splash-2018-OOPSLA-Artifacts), artifact evaluation
+    - [ISSTA 2018](https://conf.researchr.org/track/issta-2018/issta-2018-Artifacts), artifact evaluation
+    - [ASE 2018](https://www.hni.uni-paderborn.de/swt/lehre/deca/), research track (sub-reviewer)
+    - [OOPSLA 2017](https://2017.splashcon.org/track/splash-2017-OOPSLA-Artifacts), artifact evaluation
+    - [ESEC/FSE 2017](http://esec-fse17.uni-paderborn.de/call_tooldemos.php), demonstrations track
+    - [ECOOP 2017](https://2017.ecoop.org/track/ecoop-2017-Artifacts), artifact evaluation
+    - [ESEC/FSE 2016](https://dl.acm.org/doi/proceedings/10.1145/2950290), research track (sub-reviewer)
+- name: "Journal reviewer"
+  display_date: 2018 - 2019
+  categories: ["TOSEM", "TSE", "JSS", "Programming"]
+  contents: |
+    - [Transactions on Software Engineering and Methodology 2019](https://dl.acm.org/journal/tosem)
+    - [Transactions on Software Engineering 2019](https://www.computer.org/csdl/journal/ts)
+    - [Journal of Systems and Software 2018](https://www.journals.elsevier.com/journal-of-systems-and-software)
+    - [Programming 2018](https://programming-journal.org/)
+- name: "Student volunteer"
+  display_date: 2016 - 2017
+  categories: ["ICSE", "ECOOP"]
+  contents: |
+    - [ICSE 2017](https://icse2017.gatech.edu/)
+    - [ECOOP 2016](https://2016.ecoop.org/home)
+- name: "Others"
+  display_date: 2016 - 2020
+  categories: ["panelist", "mentor"]
+  contents: |
+    - [ASE 2020](https://conf.researchr.org/details/ase-2020/ase-2020-social-networking-/4/PhD-Advice), panelist at the PhD advice panel
+    - [Forum EPFL alumni mentoring program 2020](https://www.forum-epfl.ch/en/students/mentoring/), mentor
+    - [ECOOP 2016 summer school](https://2016.ecoop.org/track/Summer+School), graduate mentor
+

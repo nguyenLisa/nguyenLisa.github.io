@@ -1,0 +1,67 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+[
+ {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "title-lower"    : "{{ post.title | escape | downcase}}",
+      "sub-titile" : "{{ post.subtitle | escape }}",
+      "sub-titile-lower" : "{{ post.subtitle | escape | downcase}}",
+      "categories" : "{{ post.categories }}",
+      "venue" : "{{ post.venue }}",
+      "authors" : "{{ post.authors }}",
+      "awards" : "{{ post.awards }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}",
+      "excerpt"     : "{{ post.excerpt | strip_html | strip_newlines | remove_chars | escape }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for post in site.data.distinctions %}
+    {
+      "title"    : "{{ post.name | escape }}",
+      "categories" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "link"     : "{{ post.link }}",
+      "organization"     : "{{ post.organization }}",
+      "url"      : "#{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for post in site.data.teaching %}
+    {
+      "title"    : "{{ post.name | escape }}",
+      "categories" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "link"     : "{{ post.link }}",
+      "contents"     : "{{ post.contents | strip_html | strip_newlines | remove_chars | escape }}",
+      "url"      : "#{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for post in site.data.service %}
+    {
+      "title"    : "{{ post.name | escape }}",
+      "categories" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "link"     : "{{ post.link }}",
+      "contents"     : "{{ post.contents | strip_html | strip_newlines | remove_chars | escape }}",
+      "url"      : "#{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for post in site.data.origami %}
+    {
+      "title"    : "{{ post.name | escape }}",
+      "categories" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "link"     : "{{ post.link }}",
+      "contents"     : "{{ post.contents | strip_html | strip_newlines | remove_chars | escape }}",
+      "url"      : "#{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

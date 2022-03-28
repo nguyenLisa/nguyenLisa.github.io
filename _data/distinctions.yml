@@ -1,0 +1,45 @@
+- name: "UPB doctoral dissertation award"
+  date: "2020"
+  organization: "Paderborn university"
+  link: "https://www.uni-paderborn.de/fileadmin/neujahrsempfang/Neujahrsempfang2021_Preistraeger.pdf"
+  categories: distinctions
+- name: "Zonta club Paderborn award"
+  date: "2020"
+  organization: "Zonta international"
+  link: "https://www.uni-paderborn.de/fileadmin/neujahrsempfang/Neujahrsempfang2021_Preistraeger.pdf"
+  categories: distinctions
+- name: "Doctoral thesis – summa cum laude"
+  date: "2019"
+  organization: "Paderborn university"
+  link: ""
+  categories: distinctions
+- name: "Invited young researcher - 7th Heidelberg laureate forum"
+  date: "2019"
+  organization: "Heidelberg laureate forum"
+  link: "https://www.heidelberg-laureate-forum.org/young-researchers.html"
+  categories: distinctions
+- name: "ACM SIGSOFT distinguished paper award"
+  date: "2017"
+  organization: "International symposium of software testing and analysis"
+  link: "https://www.sigsoft.org/awards/distinguishedPaperAward.html"
+  categories: distinctions
+- name: "Completion of the SciMento mentoring program"
+  date: "2017"
+  organization: "Mentoring Hessen"
+  link: "https://www.mentoringhessen.de/en/"
+  categories: distinctions
+- name: "First place – PLDI ACM student research competition"
+  date: "2016"
+  organization: "Programming language design and implementation"
+  link: "https://src.acm.org/candidates/2017"
+  categories: distinctions
+- name: "ISSS excellence award"
+  date: "2014"
+  organization: "Information security society Switzerland"
+  link: "https://actu.epfl.ch/news/isss-excellence-award-2014-for-lisa-nguyen-quang-4/"
+  categories: distinctions
+- name: "Finalist – Google Anita Borg scholarship"
+  date: "2012"
+  organization: "Google EMEA"
+  link: ""
+  categories: distinctions

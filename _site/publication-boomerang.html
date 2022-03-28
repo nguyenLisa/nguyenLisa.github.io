@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java | Lisa Nguyen Quang Do</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java" />
+<meta name="author" content="nguyenLisa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Many current program analyses require highly precise pointer information about small, targeted parts of a given program. This motivates the need for demand-driven pointer analyses that compute information only where required. Pointer analyses generally compute points-to sets of program variables or answer boolean alias queries. However, many client analyses require richer pointer information. For example, taint and typestate analyses often need to know the set of all aliases of a given variable under a certain calling context. With most current pointer analyses, clients must compute such information through repeated points-to or alias queries, increasing complexity and computation time for them." />
+<meta property="og:description" content="Many current program analyses require highly precise pointer information about small, targeted parts of a given program. This motivates the need for demand-driven pointer analyses that compute information only where required. Pointer analyses generally compute points-to sets of program variables or answer boolean alias queries. However, many client analyses require richer pointer information. For example, taint and typestate analyses often need to know the set of all aliases of a given variable under a certain calling context. With most current pointer analyses, clients must compute such information through repeated points-to or alias queries, increasing complexity and computation time for them." />
+<link rel="canonical" href="http://localhost:4000/publication-boomerang.html" />
+<meta property="og:url" content="http://localhost:4000/publication-boomerang.html" />
+<meta property="og:site_name" content="Lisa Nguyen Quang Do" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="1970-01-01T01:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nguyenLisa"},"dateModified":"1970-01-01T01:00:00+01:00","datePublished":"1970-01-01T01:00:00+01:00","description":"Many current program analyses require highly precise pointer information about small, targeted parts of a given program. This motivates the need for demand-driven pointer analyses that compute information only where required. Pointer analyses generally compute points-to sets of program variables or answer boolean alias queries. However, many client analyses require richer pointer information. For example, taint and typestate analyses often need to know the set of all aliases of a given variable under a certain calling context. With most current pointer analyses, clients must compute such information through repeated points-to or alias queries, increasing complexity and computation time for them.","headline":"Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publication-boomerang.html"},"url":"http://localhost:4000/publication-boomerang.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script type="text/javascript" src="/assets/js/darkmode.js"></script>
+
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header condensed">
+      <div class="about-title">
+      <a href="/">
+        
+        <img src="/assets/portfolio.png" alt="Lisa Nguyen Quang Do">
+        
+      </a>
+      <h2 id="title">
+        <a href="/">Lisa Nguyen Quang Do</a>
+      </h2>
+      </div>
+<p class="tagline">Software engineer</p>
+</div>
+      
+      <ul class="social about-footer condensed">
+<a href="https://github.com/nguyenLisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/nguyenqdlisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a><a href="https://twitter.com/lisa_nqd" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-twitter-squared"></i>
+          </li>
+        </a><a href="mailto:nqd.lisa@gmail.com" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a>
+</ul>
+<p class="about-footer condensed">©
+        2022</p>
+<div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <ul class="menu">
+        <li><a href="/#">Home</a></li>
+        <li><a href="/#projects">Research projects</a></li>
+        <li><a href="/#distinctions">Distinctions</a></li>
+        <li><a href="/#publications">Publications</a></li>
+        <li><a href="/#service">Service</a></li>
+        <li><a href="/#teaching">Teaching</a></li>
+        <li><a href="/#origami">Origami</a></li>
+      </ul>
+      <div class="post-container">
+  <a class="post-link" href="/publication-boomerang.html">
+    <h2 class="post-title-big">Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">
+      <i class="icon-calendar"></i>
+      Jul 2016  - ECOOP</div>
+<ul class="post-categories">
+<li>publications</li>
+<li>pointer-analysis</li>
+<li>on-demand</li>
+</ul>
+</div>
+  <div class="post">
+    Johannes Späth, Lisa Nguyen Quang Do, Eric Bodden<div>
+        <i class="icon-award"></i> 
+        Artifact evaluated
+      </div>
+<p>[<a href="assets/docs/papers/ecoop16.pdf">pdf</a>][<a href="https://drops.dagstuhl.de/opus/volltexte/2016/6116/" target="_blank" rel="noopener noreferrer">proceedings</a>][<a href="https://github.com/johspaeth/boomerang-artifact" target="_blank" rel="noopener noreferrer">implementation</a>][<a href="https://www.youtube.com/watch?v=aTt4M2_TGPI" target="_blank" rel="noopener noreferrer">video</a>]</p>
+<p>Many current program analyses require highly precise pointer information about small, targeted parts of a given program. This motivates the need for demand-driven pointer analyses that compute information only where required. Pointer analyses generally compute points-to sets of program variables or answer boolean alias queries. However, many client analyses require richer pointer information. For example, taint and typestate analyses often need to know the set of all aliases of a given variable under a certain calling context. With most current pointer analyses, clients must compute such information through repeated points-to or alias queries, increasing complexity and computation time for them.</p>
+
+<p>This paper presents Boomerang, a demand-driven, flow-, field-, and context-sensitive pointer analysis for Java programs. Boomerang computes rich results that include both the possible allocation sites of a given pointer (points-to information) and all pointers that can point to those allocation sites (alias information). For increased precision and scalability, clients can query Boomerang with respect to particular calling contexts of interest.</p>
+
+<p>Our experiments show that Boomerang is more precise than existing demand-driven pointer analyses. Additionally, using Boomerang, the taint analysis FlowDroid issues up to 29.4x fewer pointer queries compared to using other pointer analyses that return simpler pointer information. Furthermore, the search space of Boomerang can be significantly reduced by requesting calling contexts from the client analysis.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@InProceedings{spth_et_al:LIPIcs:2016:6116,
+  author =	{Johannes Sp{\"a}th and Lisa Nguyen Quang Do and Karim Ali and Eric Bodden},
+  title =	{Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java},
+  booktitle =	{30th European Conference on Object-Oriented Programming (ECOOP 2016)},
+  pages =	{22:1--22:26},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-014-9},
+  ISSN =	{1868-8969},
+  year =	{2016},
+  volume =	{56},
+  editor =	{Shriram Krishnamurthi and Benjamin S. Lerner},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{http://drops.dagstuhl.de/opus/volltexte/2016/6116},
+  URN =		{urn:nbn:de:0030-drops-61164},
+  doi =		{10.4230/LIPIcs.ECOOP.2016.22},
+  annote =	{Keywords: Demand-Driven; Static Analysis; IFDS; Aliasing; Points-to Analysis}
+}
+</code></pre></div></div>
+
+  </div>
+</div>
+
+    </section>
+    <footer class="condensed">
+      <ul class="social about-footer condensed">
+<a href="https://github.com/nguyenLisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/nguyenqdlisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a><a href="https://twitter.com/lisa_nqd" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-twitter-squared"></i>
+          </li>
+        </a><a href="mailto:nqd.lisa@gmail.com" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a>
+</ul>
+<p class="about-footer condensed">©
+        2022</p>
+<div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+    </footer>
+  </main>
+  
+  <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+  
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+- name: "Graduate teaching assistant"
+  categories: ["deca", "ssse", "ssd", "technical-report"]
+  display_date: 2014 - 2018
+  contents: |
+    - [Seminar: secure systems engineering](https://www.hni.uni-paderborn.de/swt/lehre/seminar-secure-systems-engineering-ws-20182019/), Paderborn university (winter 2018). The seminar yielded three technical reports:
+      - [Security implications of compiler optimizations on cryptography — a review](https://arxiv.org/abs/1907.02530)
+      - [Integration of the static analysis results interchange format in CogniCrypt](https://arxiv.org/abs/1907.02558)
+      - [Object-capability as a means of permission and authority in software systems](https://arxiv.org/abs/1907.07154)
+    - [Designing code analyses for large software systems](https://www.hni.uni-paderborn.de/swt/lehre/deca/), Paderborn university (summers 2016-2019)
+    - Secure software development, TU Darmstadt (winter 2015)
+    - Designing code analyses for large software systems, TU Darmstadt (winter 2014)
+- name: "Substitute lecturer"
+  categories: ["deca", "ssd"]
+  display_date: 2015 - 2018
+  contents: |
+    - [Designing code analyses for large software systems](https://www.hni.uni-paderborn.de/sse/lehre/vorlesungsarchiv/ws-20202021/deca/), Paderborn university (summer 2018)
+    - [Designing code analyses for large software systems](https://www.hni.uni-paderborn.de/sse/lehre/vorlesungsarchiv/ss-2016/deca/), Paderborn university (summer 2016)
+    - Secure software development, TU Darmstadt (winter 2015)
+- name: "Thesis supervision"
+  display_date: 2017 - 2019
+  contents: |
+    - A tool for prototyping static analysis graphical user interfaces. G. S. Varma. (MA)
+    - Automating builds for open source software. Thoren Grüttemeier. (BA)
+    - Omniscient debugging for static analysis. Marcus Nachtigall. (MA)
+    - Indexing open-source JavaScript repositories. Ankur Gupta. (MA)
+    - [Supporting incremental changes in static analysis code](https://www.hni.uni-paderborn.de/sse/lehre/bachelor-masterarbeiten/details/?tx_ttnews%5Btt_news%5D=914&cHash=cf8b4a8413bcb385d42392f7261c16e0). Kaarthik Radhakrishna. (MA)
+    - [Aliasing in incremental static analysis with IDEal](https://www.hni.uni-paderborn.de/sse/lehre/bachelor-masterarbeiten/details/?tx_ttnews%5Btt_news%5D=913&cHash=6525f748341ee14488f99f151a276814). Shashank Subramanya. (MA)
+- name: "Student supervision"
+  categories: ["pg", "ucosp"]
+  display_date: 2017 - 2020
+  contents: |
+    - [Project group: Delphi – mining software ecosystems using static program analysis](https://www.hni.uni-paderborn.de/sse/lehre/projektgruppenarchiv/pg-jimpleaid/) (2019 - 2020)
+    - [Project group: automated benchmark management](https://www.hni.uni-paderborn.de/sse/lehre/projektgruppenarchiv/pg-abm/) (2018 - 2019)
+    - [Undergraduate Capstone open source projects: filtering module for the automated benchmark management platform](https://ucosp.ca/) (2018)
+    - [Project group: secure integration of cryptographic software](https://www.hni.uni-paderborn.de/sse/lehre/projektgruppenarchiv/pg-abm/) (2017 - 2018)
+    - [Project group: visualising data flows in static code analyses](https://www.hni.uni-paderborn.de/sse/lehre/projektgruppenarchiv/visuflow/) (2016 - 2017)
+

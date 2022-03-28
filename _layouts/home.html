@@ -1,0 +1,247 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+<ul class="posts">
+  <h1>Home</h1>
+  <div class="post"> {{ site.plainwhite.description }} </div> 
+</ul>
+
+<ul class="posts">
+  <li class="posts-labelgroup" id="posts-labelgroup">
+    <h1 id="posts-label">Search</h1>
+    {% if site.plainwhite.search %}
+    <div class="search-container">
+      <div class="search-section">
+        <i class="icon-search"></i>
+        <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+      </div>
+      <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+    </div>
+    {% endif %}
+  </li>
+</ul>
+
+{%- if site.categories.projects.size > 0 -%}
+  <ul class="posts">
+    <a id="projects" class="menu-anchor">
+      <h1>Research projects</h1>
+    </a>    
+    {%- for post in site.categories.projects -%}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <h2 class="post-title">{{ post.title | escape }}</h2>
+        </a>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }}
+          </div>
+          {%- if post.categories.size > 0-%}
+          <ul class="post-categories">
+            {%- for tag in post.categories -%}
+              {%- if tag != "projects" -%}
+                <li>{{ tag }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+        </div>
+        <div class="post">
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.data.distinctions.size > 0 -%}
+  <ul class="posts">
+    <a id="distinctions" class="menu-anchor">
+      <h1>Distinctions</h1>
+    </a>
+    {%- for post in site.data.distinctions -%}
+      <li>
+        <div class="post-meta">
+          <div class="post-date">
+            <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
+              {%- if post.link.size > 0 -%}
+                <a class="post-link" href="{{ post.link }}">
+              {%- endif -%}
+                <h2 class="post-title">{{ post.name | escape }}</h2>
+              {%- if post.link %}
+                </a>
+              {%- endif -%}
+            </a>
+          </div>
+          <div class="post-categories post-date">
+            {{ post.organization }} - <i class="icon-calendar"></i> {{ post.date}}
+          </div>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.categories.publications.size > 0 -%}
+  <ul class="posts">
+    <a id="publications" class="menu-anchor">
+      <h1>Publications</h1>
+    </a>
+    {%- for post in site.categories.publications -%}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <h2 class="post-title">{{ post.title | escape }}</h2>
+        </a>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }} -  <i>{{ post.venue }}</i> -  {{ post.authors }}
+          </div>
+          {%- if post.categories.size > 0-%}
+          <!--<ul class="post-categories">
+            {%- for tag in post.categories -%}
+              {%- if tag != "publications" -%}
+                <li>{{ tag }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>-->
+          {%- endif -%}
+        </div>
+        <div class="post">
+          {%- if post.awards.size > 0 -%}
+            <span class="awards">
+              <i class="icon-award"></i>
+              {{ post.awards }}
+            </span>
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.data.service.size > 0 -%}
+  <ul class="posts">
+    <a id="service" class="menu-anchor">
+      <h1>Service</h1>
+    </a>
+    {%- for post in site.data.service -%}
+      <li>
+        <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
+          {%- if post.link.size > 0 -%}
+            <a class="post-link" href="{{ post.link }}">
+          {%- endif -%}
+          <h2 class="post-title">{{ post.name | escape }}</h2>
+          {%- if post.link.size > 0 -%}
+            </a>
+          {%- endif -%}
+        </a>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }}
+          </div>
+          {%- if post.categories.size > 0-%}
+          <!--<ul class="post-categories">
+            {%- for tag in post.categories -%}
+            <li>{{ tag }}</li>
+            {%- endfor -%}
+          </ul>-->
+          {%- endif -%}
+        </div>
+        <div class="post">
+          {%- if site.show_excerpts -%}
+            {{ post.contents | markdownify }}
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.data.teaching.size > 0 -%}
+  <ul class="posts">
+    <a id="teaching" class="menu-anchor">
+      <h1>Teaching</h1>
+    </a>
+    {%- for post in site.data.teaching -%}
+      <li>
+        <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
+          {%- if post.link.size > 0 -%}
+            <a class="post-link" href="{{ post.link }}">
+          {%- endif -%}
+          <h2 class="post-title">{{ post.name | escape }}</h2>
+          {%- if post.link.size > 0 -%}
+            </a>
+          {%- endif -%}
+        </a>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }}
+          </div>
+          {%- if post.categories.size > 0-%}
+          <!--<ul class="post-categories">
+            {%- for tag in post.categories -%}
+            <li>{{ tag }}</li>
+            {%- endfor -%}
+          </ul>-->
+          {%- endif -%}
+        </div>
+        <div class="post">
+          {%- if site.show_excerpts -%}
+            {{ post.contents | markdownify }}
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.data.origami.size > 0 -%}
+  <ul class="posts">
+    <a id="origami" class="menu-anchor">
+      <h1>Origami</h1>
+    </a>
+    {%- for post in site.data.origami -%}
+      <li>
+        <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
+          {%- if post.link.size > 0 -%}
+            <a class="post-link" href="{{ post.link }}">
+          {%- endif -%}
+            <h2 class="post-title">{{ post.name | escape }}</h2>
+          {%- if post.link.size > 0 -%}
+            </a>
+          {%- endif -%}
+        </a>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }}
+          </div>
+          {%- if post.categories.size > 0-%}
+          <!--<ul class="post-categories">
+            {%- for tag in post.categories -%}
+            <li>{{ tag }}</li>
+            {%- endfor -%}
+          </ul>-->
+          {%- endif -%}
+        </div>
+        <div class="post">
+          {%- if site.show_excerpts -%}
+            {{ post.contents | markdownify }}
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

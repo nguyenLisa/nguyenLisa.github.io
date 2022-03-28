@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<title>Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN | Lisa Nguyen Quang Do</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN" />
+<meta name="author" content="nguyenLisa" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This article explores the effect of applying a user-centered approach to SWAN, a security-focused static-analysis tool for the Swift programming language. SWAN is being actively developed to feature better integration into the Swift development workflow. Our goal is to evaluate the effectiveness of the approach and guidelines for improving the usability of the next version of SWAN." />
+<meta property="og:description" content="This article explores the effect of applying a user-centered approach to SWAN, a security-focused static-analysis tool for the Swift programming language. SWAN is being actively developed to feature better integration into the Swift development workflow. Our goal is to evaluate the effectiveness of the approach and guidelines for improving the usability of the next version of SWAN." />
+<link rel="canonical" href="http://localhost:4000/publication-cacm.html" />
+<meta property="og:url" content="http://localhost:4000/publication-cacm.html" />
+<meta property="og:site_name" content="Lisa Nguyen Quang Do" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="1970-01-01T01:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nguyenLisa"},"dateModified":"1970-01-01T01:00:00+01:00","datePublished":"1970-01-01T01:00:00+01:00","description":"This article explores the effect of applying a user-centered approach to SWAN, a security-focused static-analysis tool for the Swift programming language. SWAN is being actively developed to feature better integration into the Swift development workflow. Our goal is to evaluate the effectiveness of the approach and guidelines for improving the usability of the next version of SWAN.","headline":"Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publication-cacm.html"},"url":"http://localhost:4000/publication-cacm.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script type="text/javascript" src="/assets/js/darkmode.js"></script>
+
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header condensed">
+      <div class="about-title">
+      <a href="/">
+        
+        <img src="/assets/portfolio.png" alt="Lisa Nguyen Quang Do">
+        
+      </a>
+      <h2 id="title">
+        <a href="/">Lisa Nguyen Quang Do</a>
+      </h2>
+      </div>
+<p class="tagline">Software engineer</p>
+</div>
+      
+      <ul class="social about-footer condensed">
+<a href="https://github.com/nguyenLisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/nguyenqdlisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a><a href="https://twitter.com/lisa_nqd" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-twitter-squared"></i>
+          </li>
+        </a><a href="mailto:nqd.lisa@gmail.com" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a>
+</ul>
+<p class="about-footer condensed">©
+        2022</p>
+<div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+    </section>
+    <section class="content">
+      <ul class="menu">
+        <li><a href="/#">Home</a></li>
+        <li><a href="/#projects">Research projects</a></li>
+        <li><a href="/#distinctions">Distinctions</a></li>
+        <li><a href="/#publications">Publications</a></li>
+        <li><a href="/#service">Service</a></li>
+        <li><a href="/#teaching">Teaching</a></li>
+        <li><a href="/#origami">Origami</a></li>
+      </ul>
+      <div class="post-container">
+  <a class="post-link" href="/publication-cacm.html">
+    <h2 class="post-title-big">Designing UIs for static analysis tools: evaluating tool design guidelines with SWAN</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">
+      <i class="icon-calendar"></i>
+      Feb 2022  - CACM</div>
+<ul class="post-categories">
+<li>publications</li>
+<li>perspective</li>
+</ul>
+</div>
+  <div class="post">
+    Daniil Tiganov, Lisa Nguyen Quang Do, Karim Ali<p>[<a href="assets/docs/papers/cacm21.pdf">pdf</a>][<a href="https://queue.acm.org/detail.cfm?id=3487026" target="_blank" rel="noopener noreferrer">ACM Queue</a>] [<a href="https://cacm.acm.org/magazines/2022/2/258228-designing-uis-for-static-analysis-tools/fulltext" target="_blank" rel="noopener noreferrer">CACM</a>]</p>
+<p>This article explores the effect of applying a user-centered approach to SWAN, a security-focused static-analysis tool for the Swift programming language. SWAN is being actively developed to feature better integration into the Swift development workflow. Our goal is to evaluate the effectiveness of the approach and guidelines for improving the usability of the next version of SWAN.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{10.1145/3486600,
+  author = {Tiganov, Daniil and Do, Lisa Nguyen Quang and Ali, Karim},
+  title = {Designing UIs for Static-Analysis Tools},
+  year = {2022},
+  issue_date = {February 2022},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {65},
+  number = {2},
+  issn = {0001-0782},
+  url = {https://doi.org/10.1145/3486600},
+  doi = {10.1145/3486600},
+  abstract = {Evaluating tool design guidelines with SWAN.},
+  journal = {Commun. ACM},
+  month = {jan},
+  pages = {52–58},
+  numpages = {7}
+}
+</code></pre></div></div>
+
+  </div>
+</div>
+
+    </section>
+    <footer class="condensed">
+      <ul class="social about-footer condensed">
+<a href="https://github.com/nguyenLisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/nguyenqdlisa" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a><a href="https://twitter.com/lisa_nqd" target="_blank" rel="noopener noreferrer">
+          <li>
+            <i class="icon-twitter-squared"></i>
+          </li>
+        </a><a href="mailto:nqd.lisa@gmail.com" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a>
+</ul>
+<p class="about-footer condensed">©
+        2022</p>
+<div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+    </footer>
+  </main>
+  
+  <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+  
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+</body>
+
+</html>
