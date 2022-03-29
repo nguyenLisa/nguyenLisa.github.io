@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why can't johnny fix vulnerabilities: a usability evaluation of static analysis tools for security"
+title:  "Why can't Johnny fix vulnerabilities: a usability evaluation of static analysis tools for security"
 display_date:   "Aug 2020"
 authors: "Justin Smith, Lisa Nguyen Quang Do, Emerson Murphy-Hill"
 venue: "SOUPS"
