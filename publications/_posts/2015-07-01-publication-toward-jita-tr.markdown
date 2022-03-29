@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toward a Just-in-Time Static Analysis"
+title:  "Toward a just-in-time static analysis"
 display_date:   "Jul 2015"
 venue:   "Tech report"
 authors: "Lisa Nguyen Quang Do, Karim Ali, Benjamin Livshits, Eric Bodden"

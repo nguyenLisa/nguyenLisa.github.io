@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Security Analysis of TrueCrypt"
+title:  "Security analysis of TrueCrypt"
 display_date:   "Nov 2015"
 venue:   "BSI / Fraunhofer SIT"
 authors: "Mauro Baluda, Andreas Fuchs, Philipp Holzinger, Lisa Nguyen, Lotfi ben Othmane, Andreas Poller, Jürgen Repp, Johannes Späth, Jan Steffan, Stefan Triller, Eric Bodden"

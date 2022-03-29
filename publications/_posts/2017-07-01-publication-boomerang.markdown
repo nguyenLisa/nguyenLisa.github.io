@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java"
+title:  "Boomerang: demand-driven flow- and context-sensitive pointer analysis for Java"
 display_date:   "Jul 2016"
 venue:   "ECOOP"
 authors: "Johannes Späth, Lisa Nguyen Quang Do, Eric Bodden"
