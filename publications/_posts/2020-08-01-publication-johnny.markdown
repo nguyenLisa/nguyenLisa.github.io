@@ -3,7 +3,7 @@ layout: post
 title:  "Why can't johnny fix vulnerabilities: a usability evaluation of static analysis tools for security"
 display_date:   "Aug 2020"
 authors: "Justin Smith, Lisa Nguyen Quang Do, Emerson Murphy-Hill"
-venue: "USENIX"
+venue: "SOUPS"
 categories: heuristic-walkthrough
 links: "[[pdf](assets/docs/papers/soups20.pdf)][[proceedings](https://dl.acm.org/doi/10.5555/3488905.3488918)]"
 date:   1970-01-01 00:00:00 +0000 # Do not use. Only there because posts require a date.
