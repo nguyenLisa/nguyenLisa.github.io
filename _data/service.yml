@@ -29,9 +29,10 @@
     - [ECOOP 2017](https://2017.ecoop.org/track/ecoop-2017-Artifacts), artifact evaluation
     - [ESEC/FSE 2016](https://dl.acm.org/doi/proceedings/10.1145/2950290), research track (sub-reviewer)
 - name: "Journal reviewer"
-  display_date: 2018 - 2019
-  categories: ["TOSEM", "TSE", "JSS", "Programming"]
+  display_date: 2018 - 2022
+  categories: ["TOSEM", "TSE", "JSS", "Programming", "S&P"]
   contents: |
+    - [IEEE Security & Privacy 2022](https://www.computer.org/csdl/magazine/sp)
     - [Transactions on Software Engineering and Methodology 2019](https://dl.acm.org/journal/tosem)
     - [Transactions on Software Engineering 2019](https://www.computer.org/csdl/journal/ts)
     - [Journal of Systems and Software 2018](https://www.journals.elsevier.com/journal-of-systems-and-software)
