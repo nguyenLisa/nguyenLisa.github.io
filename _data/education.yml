@@ -5,8 +5,12 @@
   notes: "Supervisor: Prof. Dr. Eric Bodden"
   categories: education
 - title: "Master in Computer Science (M.Sc.)"
-  date: "2014 - 2019"
+  date: "2012 - 2014"
   organization: "Ecole Polytechnique Fédérale de Lausanne"
   awards: "ISSS Excellence Award"
   notes: "Specialization in Internet Computing"
+  categories: education
+- title: "Ecole d'ingénieurs"
+  date: "2011 - 2012"
+  organization: "ESIEE Paris"
   categories: education

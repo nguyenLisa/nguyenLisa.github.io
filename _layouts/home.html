@@ -37,18 +37,12 @@ layout: default
       <li>
         <div class="post-meta">
           <div class="post-date">
-            <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
-              {%- if post.link.size > 0 -%}
-                <a class="post-link" href="{{ post.link }}">
-              {%- endif -%}
-                <h2 class="post-title">{{ post.name | escape }}</h2>
-              {%- if post.link %}
-                </a>
-              {%- endif -%}
+            <a id="{{ post.name }}" class="menu-anchor">
+              <h2 class="post-title">{{ post.name | escape }}</h2>
             </a>
           </div>
           <div class="post-categories post-date">
-            {{ post.organization }} - <i class="icon-calendar"></i> {{ post.date}}
+            {{ post.organization }} - <i class="icon-calendar"></i> {{ post.date }}
           </div>
         </div>
       </li>
@@ -56,26 +50,29 @@ layout: default
   </ul>
 {%- endif -%}
 
-{%- if site.categories.education.size > 0 -%}
+{%- if site.data.education.size > 0 -%}
   <ul class="posts">
     <a id="education" class="menu-anchor">
       <h1>Education</h1>
     </a>
-    {%- for post in site.categories.education -%}
+    {%- for post in site.data.education -%}
       <li>
-        <h2 class="post-title">{{ post.title | escape }}</h2>
         <div class="post-meta">
           <div class="post-date">
-            <i class="icon-calendar"></i>
-            {{ post.display_date }} -  
-              {%- if post.awards.size > 0 -%}
-                <span class="awards">
-                  <i class="icon-award"></i>
-                  {{ post.awards }}
-                </span>
-              {%- endif -%}
-             -  {{ post.notes }}
+            <h2 class="post-title">{{ post.title }}</h2>
           </div>
+          <div class="post-categories post-date">
+            {{ post.organization }} - <i class="icon-calendar"></i> {{ post.date }}
+          </div>
+        </div>
+        <div class="post">
+          {{ post.notes }}
+          {%- if post.awards.size > 0 -%}
+            <span class="awards">
+              <i class="icon-award"></i>
+              {{ post.awards }}
+            </span>
+          {%- endif -%}
         </div>
       </li>
     {%- endfor -%}

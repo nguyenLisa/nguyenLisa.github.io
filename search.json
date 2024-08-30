@@ -20,6 +20,26 @@ sitemap:
       "excerpt"     : "{{ post.excerpt | strip_html | strip_newlines | remove_chars | escape }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
+  {% for post in site.data.experience %}
+    {
+      "title"    : "{{ post.name | escape }}",
+      "categories" : "{{ post.categories }}",
+      "date"     : "{{ post.date }}",
+      "organization"     : "{{ post.organization | escape }}",
+      "url"      : "#experience"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for post in site.data.education %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "categories" : "{{ post.categories }}",
+      "date"     : "{{ post.date }}",
+      "organization"     : "{{ post.organization | escape }}",
+      "awards"   : "{{ post.awards | escape }}",
+      "notes"    : "{{ post.notes | escape }}",
+      "url"      : "#education"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
   {% for post in site.data.distinctions %}
     {
       "title"    : "{{ post.name | escape }}",
