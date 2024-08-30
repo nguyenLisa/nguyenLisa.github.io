@@ -1,0 +1,25 @@
+- name: "Senior Software Engineer"
+  date: "2021 - now"
+  organization: "Google"
+  link: ""
+  categories: experience
+- name: "Software Engineer"
+  date: "2019 - 2021"
+  organization: "Google"
+  link: ""
+  categories: experience
+- name: "Researcher"
+  date: "2014 - 2019"
+  organization: "Paderborn University, Fraunhofer IEM, Fraunhofer SIT"
+  link: ""
+  categories: experience
+- name: "Software Engineering Intern"
+  date: "2017"
+  organization: "Google"
+  link: ""
+  categories: experience
+- name: "Site Reliability Engineering Intern"
+  date: "2016"
+  organization: "Google"
+  link: ""
+  categories: experience

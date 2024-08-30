@@ -28,6 +28,60 @@ layout: default
   </li>
 </ul>
 
+{%- if site.data.experience.size > 0 -%}
+  <ul class="posts">
+    <a id="experience" class="menu-anchor">
+      <h1>Experience</h1>
+    </a>
+    {%- for post in site.data.experience -%}
+      <li>
+        <div class="post-meta">
+          <div class="post-date">
+            <a id="{{ post.name | strip_html | strip_newlines | remove_chars | escape | remove: ' ' | downcase }}" class="menu-anchor">
+              {%- if post.link.size > 0 -%}
+                <a class="post-link" href="{{ post.link }}">
+              {%- endif -%}
+                <h2 class="post-title">{{ post.name | escape }}</h2>
+              {%- if post.link %}
+                </a>
+              {%- endif -%}
+            </a>
+          </div>
+          <div class="post-categories post-date">
+            {{ post.organization }} - <i class="icon-calendar"></i> {{ post.date}}
+          </div>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{%- if site.categories.education.size > 0 -%}
+  <ul class="posts">
+    <a id="education" class="menu-anchor">
+      <h1>Education</h1>
+    </a>
+    {%- for post in site.categories.education -%}
+      <li>
+        <h2 class="post-title">{{ post.title | escape }}</h2>
+        <div class="post-meta">
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            {{ post.display_date }} -  
+              {%- if post.awards.size > 0 -%}
+                <span class="awards">
+                  <i class="icon-award"></i>
+                  {{ post.awards }}
+                </span>
+              {%- endif -%}
+             -  {{ post.notes }}
+          </div>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
 {%- if site.categories.projects.size > 0 -%}
   <ul class="posts">
     <a id="projects" class="menu-anchor">
